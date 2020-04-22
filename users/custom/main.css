@@ -1,0 +1,50 @@
+.marginTop10 {
+    margin-top: 10px;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+
+.marginTop30 {
+    margin-top: 30px;
+}
+
+.marginTop40 {
+    margin-top: 40px;
+}
+
+.mandatory {
+    color: #ff0000;
+}
+
+.brand-link img {
+    background-color: #fff;
+}
+
+.teacherImg {
+    max-height: 50px;
+}
+
+.loginBg {
+    background: url(../../assets/images/background/globe-visits.jpg) center center;
+    background-size: cover;
+}
+
+.registerBg {
+    background: url(../../assets/images/bg/world3.jpg) center center;
+    background-size: cover;
+}
+
+.login-page .login-logo a {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #000;
+}
+
+.login-page .card {
+    background: transparent;
+}
+
+.login-page .login-card-body {
+    background: rgba(255, 255, 255, .7);
+}

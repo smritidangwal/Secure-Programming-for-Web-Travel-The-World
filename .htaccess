@@ -1,0 +1,32 @@
+ErrorDocument 404 /404.php
+
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW HOTLINKID:JyHuVeveHe
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?smritidangwal.com/.*$      [NC]
+RewriteRule .*\.(jpeg|bmp|mpeg|mov|exe|swf|jpg|png|avi|wma|rar|pdf|txt|psd|mp3|zip|mpg|tiff|gif)$ https://smritidangwal.com/403.php [R,NC]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE JyHuVeveHe:HOTLINKID
+
+# FORCE HTTPS REDIRECT
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# END FORCE HTTPS REDIRECT
+
+
+#block execution if xss occurs somewhere
+Header always set X-Xss-Protection "1; mode=block"
+Header always append X-Frame-Options "SAMEORIGIN"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "same-origin"
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+
+Options -Indexes
+
+php_flag display_startup_errors off
+php_value post_max_size 16M
+php_flag allow_url_include off

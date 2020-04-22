@@ -1,0 +1,56 @@
+.bradcam_bg {
+    background-image: url(../images/background/brown-hut-island.jpg);
+}
+
+.bradcam_bg_2 {
+    background-image: url(../images/background/globe-visits.jpg);
+}
+
+.bradcam_text {
+    text-shadow: 0 0 10px black;
+}
+
+.prevNextImg {
+    width: 100px;
+    height: auto;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.shareExperienceSection {
+    background: #333333b3;
+    background: -webkit-linear-gradient(to top, #02042040, #6b6b83b3, #333333b3 90%);
+    background: linear-gradient(to top, #02042040, #6b6b83b3, #333333b3 90%);
+    width: 50%;
+    margin: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.shareExperienceSection a button {
+    padding: 15px;
+    color: #0F2027;
+    text-shadow: 0 0 1px #999999;
+    background: #C6FFDD;
+    background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);
+    background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);
+}
+
+.shareExperienceSection a button:hover {
+    color: #333333;
+    text-shadow: 0 0 1px #333;
+    box-shadow: 0 1px 10px #333;
+}
+
+@media screen and (max-width: 992px) {
+    .shareExperienceSection {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .shareExperienceSection {
+        width: 100%;
+    }
+}
